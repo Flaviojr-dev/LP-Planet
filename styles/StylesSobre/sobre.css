@@ -1,0 +1,33 @@
+.container_missao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_missao__content{
+    text-align: center;
+}
+
+.container_missao__content p {
+    text-align: left;
+    width: 600px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .container_missao img{
+        display: none;
+    }
+
+    .container_missao__content p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .container_missao{
+        margin-top: 50px;
+    }
+}

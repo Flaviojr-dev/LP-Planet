@@ -9,17 +9,19 @@ body {
 
 }
 
-.header {
-    background: white;
-    border-bottom: 2px solid rgb(150, 150, 150);
-    position: relative;
-}
-
 .header_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    background: white;
+    border-bottom: 2px solid rgb(150, 150, 150);
+    position: relative;
+    max-height: 80px;
+}
+
+.header_nav img {
+    width: 100px;
+    margin-top: 20px;
 }
 
 .header_nav__ul {

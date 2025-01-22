@@ -19,3 +19,4 @@ const closeMobileMenu = () => {
 hamburgerMenu.addEventListener('click', openMenu);
 
 closeMenu.addEventListener('click', closeMobileMenu);
+

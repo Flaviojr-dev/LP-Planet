@@ -1,0 +1,13 @@
+.container_info{
+    text-align: center;
+}
+
+.container_info p {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container_info h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
