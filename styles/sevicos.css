@@ -1,0 +1,150 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.servicos-servico {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 1rem;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.intro-servico {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; 
+}
+
+.intro-servico h1 span {
+    font-weight: normal;
+}
+
+.intro-servico h1 strong {
+    font-weight: bold;
+}
+
+.intro-servico p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.cards-container-servico {
+    flex: 2; 
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; 
+}
+
+.card-servico {
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 900px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex: 1 1 calc(33.33% - 1rem); 
+    max-width: calc(33.33% - 1rem);
+    text-align: center;
+}
+
+.card-servico h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.card-servico h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.card-servico p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.card-servico button {
+    background-color: #fff;
+    border: 1px solid #333;
+    padding: 0.8rem 3rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000000;
+}
+
+.card-servico button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .servicos-servico {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .intro-servico {
+        margin-right: 0;
+        margin-bottom: 20px; 
+        text-align: center;
+    }
+
+    .cards-container-servico {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-servico {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+
+    .card-servico {
+        width: 100%;
+     }
+}
+
+@media (max-width: 480px) {
+    .intro-servico h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-servico p {
+        font-size: 0.9rem;
+    }
+
+    .card-servico h2 {
+        font-size: 1rem;
+    }
+
+    .card-servico h3 {
+        font-size: 0.9rem;
+    }
+
+    .card-servico p {
+        font-size: 0.8rem;
+    }
+
+    .card-servico button {
+        padding: 0.6rem 1.5rem;
+    }
+
+    .card-servico {
+           width: 100%;
+        }
+}

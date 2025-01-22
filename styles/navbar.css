@@ -1,0 +1,141 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header {
+    background: white;
+    border-bottom: 2px solid rgb(150, 150, 150);
+    position: relative;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header_nav__ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 1.1rem;
+    align-items: center;
+
+}
+
+.header_nav__ul a {
+    color: #1B3FB7;
+
+}
+
+.header_nav__ul img.lupa {
+    margin-left: 10px;
+}
+
+.btn-nav {
+    border: 1px solid #1B3FB7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background: #1B3FB7;
+}
+
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    list-style-type: none;
+    border-top: 2px solid rgb(150, 150, 150);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.mobile-menu.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.close-menu {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1B3FB7;
+    margin-bottom: 20px;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+    font-size: 1.2rem;
+    color: #1B3FB7;
+    text-decoration: none;
+}
+
+
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.mobile-menu li a {
+    font-size: 1rem;
+    color: #1B3FB7;
+}
+
+@media (max-width: 768px) {
+    .header_nav__ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    .hamburger-menu div {
+        width: 25px;
+        height: 3px;
+        background: #1B3FB7;
+    }
+}
